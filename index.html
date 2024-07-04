@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript Toy Problems</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Student Grade Calculator</h1>
+			<form>
+				<label for="marks"
+					>Enter student marks (between 0 and 100):</label
+				>
+				<input
+					type="number"
+					id="marks"
+					name="marks"
+					min="0"
+					max="100"
+				/>
+				<button type="button" onclick="calculateGrade()">
+					Calculate
+				</button>
+			</form>
+			<p id="grade"></p>
+		</div>
+
+		<div class="container">
+			<h1>Speeding Ticket Calculator</h1>
+			<form>
+				<label for="speed">Enter the car's speed (in km/h):</label>
+				<input type="number" id="speed" name="speed" required />
+				<button type="button" onclick="calculate()">Calculate</button>
+			</form>
+			<p id="result"></p>
+		</div>
+
+		<div class="container net-salary">
+			<h1>Net Salary Calculator</h1>
+			<form id="salary-form">
+				<label for="basic-salary">Basic Salary:</label>
+				<input
+					type="number"
+					id="basic-salary"
+					name="basic-salary"
+				/><br />
+
+				<label for="benefits">Benefits:</label>
+				<input type="number" id="benefits" name="benefits" /><br />
+
+				<button type="button" id="calculate-button">Calculate</button>
+			</form>
+
+			<p id="result"></p>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
